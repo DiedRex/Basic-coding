@@ -1,0 +1,69 @@
+*{
+		margin:0;
+		padding:0;
+	}
+
+.container{
+	position: absolute;
+	top: 1.25rem;
+	left: 1.25rem;
+	width:62.5rem;
+	height: 43.75rem;
+	padding: 0 15rem 0 15rem;
+	border: 1px solid #999;
+	background-color: #eee;
+}
+
+.logo-contain{
+	position: absolute;
+	width: 12.5rem;
+	height: 6.25rem;
+	margin-right: -100%;
+	top: 20px;
+	left: 1.25rem;
+	border: 1px solid red;
+}
+
+.logo{
+	position: absolute;
+	top: .625rem;
+	left: .625rem;
+	width: 5rem;
+	height: 5rem;
+	border: .0625rem solid black;
+}
+
+#t-name{
+	position: absolute;
+	top: 1.25rem;
+	margin-left: 6.875rem
+}
+
+.info-contain{
+	position: relative;
+	top:1.25rem;
+	width: 100%;
+	height: 41.25rem;
+	border: .0625rem solid green;
+}
+
+.person-info{
+	position: absolute;
+	width: 7.5rem;
+	height: 41.25rem;
+	margin-left: -100%;
+	right: 3.75rem;
+	top:1.25rem;
+	border: .0625rem solid red;
+}
+
+li{
+	list-style-type: none;
+}
+
+.p-logo{
+	width: 5rem;
+	height: 5rem;
+	margin: 1.25rem;
+	border: .0625rem solid green;
+}

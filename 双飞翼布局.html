@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<style>
+
+	#main_contain{
+		margin: 0 150px 0 100px;
+	}
+	.main{
+		float: left;
+		width: 100%;
+		height: 300px;
+		background-color: green;
+	}
+
+	.sup{
+		float: left;
+		width: 100px;
+		height: 300px;
+		margin-left: -100%;
+		background-color: red;
+	}
+
+	.extra{
+		float: left;
+		width: 150px;
+		height: 300px;
+		margin-left: -150px;
+		background-color: yellow;
+	}
+	</style>
+	<title>Document</title>
+</head>
+<body>
+	<div id="bd">
+		<div class="main">
+			<div id="main_contain">#main</div>
+		</div>
+		<div class="sup"></div>
+		<div class="extra"></div>
+	</div>
+</body>
+</html>
+
+<!--双飞翼布局与圣杯布局的区别
+	1.双飞翼布局给祝面板加上一个父标签用来痛过margin给两翼腾出空间
+	2.两翼不需要设置position为relative的模式，也不用设置对应的left和right方向位移使其方向移动负的宽值
+	3.圣杯采用的是padding挤出空间，而双飞翼采用的是margin
+	4.双飞翼更加适合简洁，响应式更好。
+-->
