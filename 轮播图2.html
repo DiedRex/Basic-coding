@@ -174,6 +174,19 @@
 			var container = document.getElementById('container');
 
 
+			for (var i = 0; i < buttons.length; i++) {
+                // 这里使用的是立即执行函数，
+                (function(i) {
+                    buttons[i].onclick = function() {
+                        var clickIndex = parseInt(this.getAttribute('index'));
+                        var offset = 600 * (index - clickIndex);
+                        animate(offset);
+                        index = clickIndex;
+                        showButton();
+                    }
+                })(i)
+            }
+
 			//当鼠标放到container上时，去掉定时器动画，当鼠标移动到外面是，轮播图就执行play();
 			function stop(){
 				clearInterval(timer);
